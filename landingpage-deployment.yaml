@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: landingpage-deployment
+  labels:
+    app: landingpage
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: landingpage
+  template:
+    metadata:
+      labels:
+        app: landingpage
+    spec:
+      containers:
+      - name: landingpage
+        image: denlulung/landing-page:BUILD_NUMBER
+        ports:
+        - containerPort: 80
