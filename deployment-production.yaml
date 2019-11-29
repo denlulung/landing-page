@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: landingpage
-        image: denlulung/landing-page:BUILD_NUMBER
+        image: denlulung/landing-page:latest
         ports:
         - containerPort: 80
