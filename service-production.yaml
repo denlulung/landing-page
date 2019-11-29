@@ -2,6 +2,7 @@ kind: Service 
 apiVersion: v1
 metadata:
   name: landingpage-service
+  namespace: production
 spec:
   selector: 
     app: landingpage
