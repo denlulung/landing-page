@@ -1,7 +1,7 @@
 kind: Service 
 apiVersion: v1
 metadata:
-  name: landingpage-service
+  name: landingpage-staging
   namespace: staging
 spec:
   selector: 
@@ -10,5 +10,5 @@ spec:
   - protocol: TCP 
     port: 80
     targetPort: 80 
-    nodePort: 30082
+    nodePort: 30090
   type: LoadBalancer
